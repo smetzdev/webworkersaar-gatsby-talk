@@ -15,6 +15,13 @@ module.exports = {
         url: `https://content.wpgraphql.com/graphql`,
       },
     },
+    {
+      resolve: "gatsby-source-apiserver",
+      options: {
+        url: "https://api.chucknorris.io/jokes/random",
+        name: "joke",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

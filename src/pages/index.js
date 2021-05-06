@@ -10,6 +10,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="Home" />
+      <StaticImage layout="fullWidth" src="https://picsum.photos/1280/720" />
+      <blockquote style={{ marginTop: "16px" }}>{data.joke.value}</blockquote>
       <ul>
         {posts.map((post, key) => (
           <li>
@@ -28,6 +30,9 @@ export const query = graphql`
         title
         slug
       }
+    }
+    joke {
+      value
     }
   }
 `
