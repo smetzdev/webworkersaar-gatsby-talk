@@ -10,7 +10,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="Home" />
-      <GatsbyImage image={featuredImage.childImageSharp.gatsbyImageData} />
+      {featuredImage && (
+        <GatsbyImage image={featuredImage.childImageSharp.gatsbyImageData} />
+      )}
       <h1>{data.wpPost.title}</h1>
       <section dangerouslySetInnerHTML={{ __html: data.wpPost.content }} />
     </Layout>
