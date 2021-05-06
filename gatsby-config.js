@@ -12,7 +12,7 @@ module.exports = {
          * The full URL of the WordPress site's GraphQL API.
          * Example : 'https://www.example-site.com/graphql'
          */
-        url: `https://content.wpgraphql.com/graphql`,
+        url: `http://165.227.145.113/graphql`,
       },
     },
     {
